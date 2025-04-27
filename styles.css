@@ -1,0 +1,23 @@
+body {
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    padding: 0 3.17vw;
+}
+
+#canvas {
+    
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+div .gridItem {
+    
+    border: 1px solid grey;
+
+}
