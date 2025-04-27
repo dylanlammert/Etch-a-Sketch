@@ -10,11 +10,29 @@
 
 <body>
     <section>
+        <div id="canvasMenu"> 
+            <button id="menuToggle">Grid Menu</button>
+            <input id="colorPicker"type="color">
+            <button id="eraserToggle">Eraser</button>
+            <button id="clearCanvasButton">Clear Canvas</button>
+            <button id="gridToggle">Show Grid</button>
+            <div id="scaleContainer">
+                <label for="scale"> Scale </label>
+                <input id="scaleSlider" type="range" min="1" max="100" step="1">
+                <p style="margin: 0; font-size: 12px; font-weight: bold;">Value</p>
+            </div>
+    
+            <button id="importImageButton">Import Image</button>
+            <button id="exportImageButton">Export Image</button>
+
+        </div>
+    </section>
+    <section class="canvasHead">
+        <h1> Image Creator</h1>
         <div id="canvas">
 
         </div>
     </section>
-    
 <script src="sketching.js"></script>
 </body>
 

@@ -1,7 +1,16 @@
 // Create a grid of divs
 
+// grab references of all neccessary buttons and input values
 
-let numberofBoxes = 16;
+const menuToggle = document.querySelector("#menuToggle");
+const colorPicker = document.querySelector("#colorPicker");
+const eraserToggle = document.querySelector("#eraserToggle");
+const gridToggle = document.querySelector("#gridToggle");
+const scaleSlider = document.querySelector("#scaleSlider");
+const inportImageButton = document.querySelector("#importImageButton");
+const exportImageButton = document.querySelector("#exportImageButton");
+
+let numberofBoxes = 20;
 
 
 function getSizeOfGridItems(parentWidth) {
