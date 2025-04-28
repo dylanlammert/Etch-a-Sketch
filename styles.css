@@ -14,16 +14,17 @@ section {
 
 #canvas {
     
-    height: 600px;
-    width: 600px;
+    height: 340px;
+    width: 340px;
     display: flex;
     flex-wrap: wrap;
+
     
 }
 
 #canvasMenu {
-    visibility: visible;
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 16px;
     position: absolute;
@@ -35,10 +36,26 @@ section {
     background-color: rgb(229, 229, 229, .75);
     color: black;
     border-radius: 15px;
-    box-shadow: 1px 1px 25px grey;
-    
+    box-shadow: 1px 1px 25px grey; 
 }
 
+.subDivActive {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+.subDivInactive {
+    visibility:hidden;
+    display: none;
+}
+
+#colorPicker {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+}
 .canvasHead {
     display: flex;
     flex-direction: column;
@@ -51,7 +68,10 @@ section {
     padding: 0;
     text-align: center;
 }
-
-div .gridItem {
+.toggleButton {
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+.grid {
     border: 1px solid grey;
 }

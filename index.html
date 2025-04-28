@@ -12,18 +12,19 @@
     <section>
         <div id="canvasMenu"> 
             <button id="menuToggle">Grid Menu</button>
-            <input id="colorPicker"type="color">
-            <button id="eraserToggle">Eraser</button>
-            <button id="clearCanvasButton">Clear Canvas</button>
-            <button id="gridToggle">Show Grid</button>
-            <div id="scaleContainer">
-                <label for="scale"> Scale </label>
-                <input id="scaleSlider" type="range" min="1" max="100" step="1">
-                <p style="margin: 0; font-size: 12px; font-weight: bold;">Value</p>
+            <div id="subDiv" class="subDivInactive">
+                <input id="colorPicker"type="color">
+                <button id="eraserToggle">Eraser</button>
+                <button id="clearCanvasButton">Clear Canvas</button>
+                <button id="gridToggle" class="toggleButton">Show Grid</button>
+                <div id="scaleContainer">
+                    <label id="scaleText" for="scaleSlider"> </label>
+                    <input id="scaleSlider" type="range" min="2" max="64" step="1" value="10">
+                </div>
+                <button id="importImageButton">Import Image</button>
+                <button id="exportImageButton">Export Image</button>
             </div>
-    
-            <button id="importImageButton">Import Image</button>
-            <button id="exportImageButton">Export Image</button>
+            
 
         </div>
     </section>
