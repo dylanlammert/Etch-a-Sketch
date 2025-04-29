@@ -9,32 +9,30 @@
 
 
 <body>
-    <section>
-        <div id="canvasMenu"> 
-            <button id="menuToggle">Grid Menu</button>
-            <div id="subDiv" class="subDivInactive">
-                <input id="colorPicker"type="color">
-                <button id="eraserToggle">Eraser</button>
-                <button id="clearCanvasButton">Clear Canvas</button>
-                <button id="gridToggle" class="toggleButton">Show Grid</button>
-                <div id="scaleContainer">
-                    <label id="scaleText" for="scaleSlider"> </label>
-                    <input id="scaleSlider" type="range" min="2" max="64" step="1" value="10">
-                </div>
-                <button id="importImageButton">Import Image</button>
-                <button id="exportImageButton">Export Image</button>
-            </div>
-            
-
-        </div>
-    </section>
     <section class="canvasHead">
         <h1> Image Creator</h1>
-        <div id="canvas">
+        <div id="canvas"></div>
 
+        <div class="menuContainer">
+            <div id="canvasMenu"> 
+                <button id="menuToggle"><img src="./images/edit_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" height="24px" width="24px" ></button>
+                <div id="subDiv" class="subDivInactive">
+                    <input id="colorPicker"type="color">
+                    <button id="eraserToggle">Eraser</button>
+                    <button id="clearCanvasButton">Clear Canvas</button>
+                    <button id="gridToggle" class="toggleButton">Show Grid</button>
+                    <div id="scaleContainer">
+                        <label id="scaleText" for="scaleSlider"> </label>
+                        <input id="scaleSlider" type="range" min="2" max="64" step="1" value="10">
+                    </div>
+                    <button id="importImageButton">Import Image</button>
+                    <button id="exportImageButton">Export Image</button>
+                </div>
+            </div>
         </div>
+        
     </section>
-<script src="sketching.js"></script>
+    <script src="sketching.js"></script>
 </body>
 
 </html>

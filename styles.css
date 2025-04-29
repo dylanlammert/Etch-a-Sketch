@@ -1,7 +1,7 @@
 body {
     margin: 0; 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -21,21 +21,26 @@ section {
 
     
 }
-
-#canvasMenu {
+.align-left {
     display: flex;
+    justify-content: left;
+}
+.menuContainer {
+    display: flex;
+    width: 100%;
+
+}
+#canvasMenu {
+    display: flex; 
+    justify-self: left;
     align-items: center;
-    flex-direction: column;
     gap: 16px;
-    position: absolute;
-    top: 5vw;
-    left: 5vw;
     height: fit-content;
     width: fit-content;
-    padding:16px;
+    padding: 16px;
     background-color: rgb(229, 229, 229, .75);
     color: black;
-    border-radius: 15px;
+    border-radius: 30px;
     box-shadow: 1px 1px 25px grey; 
 }
 
@@ -43,7 +48,7 @@ section {
     visibility: visible;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     gap: 16px;
 }
 .subDivInactive {
@@ -60,6 +65,9 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: fit-content;
+    margin: auto;
+    gap:16px;
 }
 
 #scaleContainer {
@@ -67,6 +75,12 @@ section {
     flex-direction: column;
     padding: 0;
     text-align: center;
+}
+
+#menuToggle {
+    border: 0;
+    padding: 0;
+    background-color: rgba(240, 255, 255, 0);
 }
 .toggleButton {
     border: 2px solid blue;
